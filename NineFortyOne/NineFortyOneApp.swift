@@ -1,17 +1,12 @@
-//
-//  NineFortyOneApp.swift
-//  NineFortyOne
-//
-//  Created by Alexander Mazanov on 4/22/22.
-//
-
 import SwiftUI
 
 @main
 struct NineFortyOneApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            PreferencesView().environmentObject(Preferences.shared)
         }
     }
 }

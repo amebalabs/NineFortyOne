@@ -8,18 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		FAB58F3B2813297B005C50BB /* NineFortyOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F3A2813297B005C50BB /* NineFortyOneApp.swift */; };
-		FAB58F3D2813297B005C50BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F3C2813297B005C50BB /* ContentView.swift */; };
 		FAB58F3F2813297C005C50BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB58F3E2813297C005C50BB /* Assets.xcassets */; };
 		FAB58F422813297C005C50BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB58F412813297C005C50BB /* Preview Assets.xcassets */; };
+		FAB58F4B28132B2E005C50BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAB58F4A28132B2E005C50BB /* Info.plist */; };
+		FAB58F4D28132BBB005C50BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F4C28132BBB005C50BB /* AppDelegate.swift */; };
+		FAB58F4F28132DD9005C50BB /* MenuBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F4E28132DD9005C50BB /* MenuBarItem.swift */; };
+		FAB58F5128132E53005C50BB /* Simctl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F5028132E53005C50BB /* Simctl.swift */; };
+		FAB58F5428132EDE005C50BB /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = FAB58F5328132EDE005C50BB /* LaunchAtLogin */; };
+		FAB58F5728132EEE005C50BB /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = FAB58F5628132EEE005C50BB /* KeyboardShortcuts */; };
+		FAB58F5928133143005C50BB /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F5828133143005C50BB /* PreferencesView.swift */; };
+		FAB58F5B28136120005C50BB /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F5A28136120005C50BB /* Preferences.swift */; };
+		FAB58F5D28142CA3005C50BB /* NSImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F5C28142CA3005C50BB /* NSImage+Extension.swift */; };
+		FAB58F60281437B2005C50BB /* ShellOut in Frameworks */ = {isa = PBXBuildFile; productRef = FAB58F5F281437B2005C50BB /* ShellOut */; };
+		FACBDB95281445A600B473E3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FACBDB94281445A600B473E3 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB58F372813297B005C50BB /* NineFortyOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NineFortyOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB58F3A2813297B005C50BB /* NineFortyOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineFortyOneApp.swift; sourceTree = "<group>"; };
-		FAB58F3C2813297B005C50BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAB58F3E2813297C005C50BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB58F412813297C005C50BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAB58F432813297C005C50BB /* NineFortyOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NineFortyOne.entitlements; sourceTree = "<group>"; };
+		FAB58F4A28132B2E005C50BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB58F4C28132BBB005C50BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB58F4E28132DD9005C50BB /* MenuBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItem.swift; sourceTree = "<group>"; };
+		FAB58F5028132E53005C50BB /* Simctl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simctl.swift; sourceTree = "<group>"; };
+		FAB58F5828133143005C50BB /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		FAB58F5A28136120005C50BB /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		FAB58F5C28142CA3005C50BB /* NSImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extension.swift"; sourceTree = "<group>"; };
+		FACBDB94281445A600B473E3 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB58F5428132EDE005C50BB /* LaunchAtLogin in Frameworks */,
+				FAB58F5728132EEE005C50BB /* KeyboardShortcuts in Frameworks */,
+				FAB58F60281437B2005C50BB /* ShellOut in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,10 +72,13 @@
 		FAB58F392813297B005C50BB /* NineFortyOne */ = {
 			isa = PBXGroup;
 			children = (
+				FAB58F4928132B0B005C50BB /* Resources */,
+				FAB58F4C28132BBB005C50BB /* AppDelegate.swift */,
 				FAB58F3A2813297B005C50BB /* NineFortyOneApp.swift */,
-				FAB58F3C2813297B005C50BB /* ContentView.swift */,
-				FAB58F3E2813297C005C50BB /* Assets.xcassets */,
-				FAB58F432813297C005C50BB /* NineFortyOne.entitlements */,
+				FAB58F5A28136120005C50BB /* Preferences.swift */,
+				FAB58F5028132E53005C50BB /* Simctl.swift */,
+				FAB58F4E28132DD9005C50BB /* MenuBarItem.swift */,
+				FAB58F5828133143005C50BB /* PreferencesView.swift */,
 				FAB58F402813297C005C50BB /* Preview Content */,
 			);
 			path = NineFortyOne;
@@ -69,6 +92,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FAB58F4928132B0B005C50BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAB58F3E2813297C005C50BB /* Assets.xcassets */,
+				FAB58F432813297C005C50BB /* NineFortyOne.entitlements */,
+				FAB58F4A28132B2E005C50BB /* Info.plist */,
+				FAB58F5C28142CA3005C50BB /* NSImage+Extension.swift */,
+				FACBDB94281445A600B473E3 /* Credits.rtf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,12 +114,18 @@
 				FAB58F332813297B005C50BB /* Sources */,
 				FAB58F342813297B005C50BB /* Frameworks */,
 				FAB58F352813297B005C50BB /* Resources */,
+				FACBDB932814455E00B473E3 /* Launch at Login */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NineFortyOne;
+			packageProductDependencies = (
+				FAB58F5328132EDE005C50BB /* LaunchAtLogin */,
+				FAB58F5628132EEE005C50BB /* KeyboardShortcuts */,
+				FAB58F5F281437B2005C50BB /* ShellOut */,
+			);
 			productName = NineFortyOne;
 			productReference = FAB58F372813297B005C50BB /* NineFortyOne.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +154,11 @@
 				Base,
 			);
 			mainGroup = FAB58F2E2813297B005C50BB;
+			packageReferences = (
+				FAB58F5228132EDE005C50BB /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				FAB58F5528132EEE005C50BB /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				FAB58F5E281437B2005C50BB /* XCRemoteSwiftPackageReference "ShellOut" */,
+			);
 			productRefGroup = FAB58F382813297B005C50BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,18 +175,46 @@
 			files = (
 				FAB58F422813297C005C50BB /* Preview Assets.xcassets in Resources */,
 				FAB58F3F2813297C005C50BB /* Assets.xcassets in Resources */,
+				FAB58F4B28132B2E005C50BB /* Info.plist in Resources */,
+				FACBDB95281445A600B473E3 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FACBDB932814455E00B473E3 /* Launch at Login */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Launch at Login";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAB58F332813297B005C50BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB58F3D2813297B005C50BB /* ContentView.swift in Sources */,
+				FAB58F5928133143005C50BB /* PreferencesView.swift in Sources */,
+				FAB58F4D28132BBB005C50BB /* AppDelegate.swift in Sources */,
+				FAB58F5B28136120005C50BB /* Preferences.swift in Sources */,
+				FAB58F5D28142CA3005C50BB /* NSImage+Extension.swift in Sources */,
 				FAB58F3B2813297B005C50BB /* NineFortyOneApp.swift in Sources */,
+				FAB58F4F28132DD9005C50BB /* MenuBarItem.swift in Sources */,
+				FAB58F5128132E53005C50BB /* Simctl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -265,15 +339,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = NineFortyOne/NineFortyOne.entitlements;
+				CODE_SIGN_ENTITLEMENTS = NineFortyOne/Resources/NineFortyOne.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NineFortyOne/Preview Content\"";
 				DEVELOPMENT_TEAM = X93LWC49WV;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NineFortyOne/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,15 +367,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = NineFortyOne/NineFortyOne.entitlements;
+				CODE_SIGN_ENTITLEMENTS = NineFortyOne/Resources/NineFortyOne.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NineFortyOne/Preview Content\"";
 				DEVELOPMENT_TEAM = X93LWC49WV;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NineFortyOne/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +412,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAB58F5228132EDE005C50BB /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		FAB58F5528132EEE005C50BB /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		FAB58F5E281437B2005C50BB /* XCRemoteSwiftPackageReference "ShellOut" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/ShellOut";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAB58F5328132EDE005C50BB /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB58F5228132EDE005C50BB /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		FAB58F5628132EEE005C50BB /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB58F5528132EEE005C50BB /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		FAB58F5F281437B2005C50BB /* ShellOut */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB58F5E281437B2005C50BB /* XCRemoteSwiftPackageReference "ShellOut" */;
+			productName = ShellOut;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAB58F2F2813297B005C50BB /* Project object */;
 }
