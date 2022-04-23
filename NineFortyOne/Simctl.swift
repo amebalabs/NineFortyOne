@@ -42,7 +42,7 @@ class Simctl {
     }
     
     private func overrideStatusBar(id: UUID) {
-        _ = try? shellOut(to: "xcrun simctl status_bar \(id.uuidString) override --time 9:41 --dataNetwork 5g --wifiMode active --wifiBars 3 --cellularBars 4 --operatorName '' --batteryState charged")
+        _ = try? shellOut(to: "xcrun simctl status_bar \(id.uuidString) override --time 9:41 --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularBars 4 --operatorName '' --batteryState charged")
     }
     
     private func clearSimulatorStatusBar(id: UUID) {
