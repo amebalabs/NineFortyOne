@@ -21,7 +21,7 @@ brew install melonamin/formulae/ninefortyone
 
 # How it works
 
-9:41 lives in the menubar and automatically change(runs periodically) the status bar in all runnning Simulators. To disable 9:41 just click on the icon, clicking on the icon again will re-enable the app.
+9:41 lives in the menu bar and automatically change(runs periodically) the status bar in all runnning Simulators. To disable 9:41 just click on the icon, clicking on the icon again will re-enable the app.
 
 You can access app's preferences using right click:
 
