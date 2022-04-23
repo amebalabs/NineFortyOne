@@ -35,12 +35,12 @@ class MenubarItem: NSObject {
     func setMenuBarImage(iconPair: Preferences.IconPairNSImage? = nil) {
         let iconPair = iconPair ?? preferences.menuBarIcon.nsImage()
         let size: CGFloat = 18
-        let nsImage = simctl.isOn ? iconPair.on:iconPair.off
+        let nsImage = simctl.isOn ? iconPair.on : iconPair.off
         let image = nsImage.resizedCopy(w: size, h: size)
         image.isTemplate = true
         statusBarItem.button?.image = image
     }
-    
+
     private func buildMenu() {
         [aboutItem, quitItem].forEach { $0.target = self }
         statusBarMenu.addItem(aboutItem)

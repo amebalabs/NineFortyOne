@@ -1,6 +1,6 @@
+import Combine
 import Foundation
 import ShellOut
-import Combine
 
 class Simctl {
     public static let shared = Simctl()
@@ -8,47 +8,47 @@ class Simctl {
     var timer: Timer?
     var cancellable: AnyCancellable?
     let preferences = Preferences.shared
-    
+
     init() {
         cancellable = preferences.$overrideInterval.sink { [weak self] interval in
             self?.continiousOverride(interval: interval)
         }
     }
-    
+
     func toggle() {
         isOn.toggle()
-        isOn ? continiousOverride(interval: preferences.overrideInterval):reset()
+        isOn ? continiousOverride(interval: preferences.overrideInterval) : reset()
     }
 
     func override() {
         Task {
-            listSimulators().filter{$0.isAvailable}.forEach{overrideStatusBar(id: $0.udid)}
+            listSimulators().filter { $0.isAvailable }.forEach { overrideStatusBar(id: $0.udid) }
         }
     }
-    
-    func continiousOverride(interval: TimeInterval) {
+
+    func continiousOverride(interval _: TimeInterval) {
         override()
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 45.0, repeats: true) { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 45.0, repeats: true) { _ in
             self.override()
         }
     }
-    
+
     func reset() {
         timer?.invalidate()
         Task {
-            listSimulators().filter{$0.isAvailable}.forEach{clearSimulatorStatusBar(id: $0.udid)}
+            listSimulators().filter { $0.isAvailable }.forEach { clearSimulatorStatusBar(id: $0.udid) }
         }
     }
-    
+
     private func overrideStatusBar(id: UUID) {
         _ = try? shellOut(to: "xcrun simctl status_bar \(id.uuidString) override --time 9:41 --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularBars 4 --operatorName '' --batteryState charged")
     }
-    
+
     private func clearSimulatorStatusBar(id: UUID) {
         _ = try? shellOut(to: "xcrun simctl status_bar \(id.uuidString) clear")
     }
-    
+
     private func listSimulators() -> [Simulator] {
         do {
             let devicesJSONString = try shellOut(to: "xcrun simctl list -j -v devices")
@@ -76,29 +76,29 @@ public struct Simulator: Decodable {
     public let state: State
     public let logPath: URL
     public let dataPath: URL
-    
+
     public enum State: String, Decodable {
         case shutdown = "Shutdown"
         case booted = "Booted"
     }
 }
-extension Simulator {
-    public var deviceId: String {
+
+public extension Simulator {
+    var deviceId: String {
         udid.uuidString
     }
 }
-
 
 public struct SimulatorList: Decodable {
     public enum Keys: String, CodingKey {
         case devices
     }
-    
+
     public let devices: [Simulator]
-    
+
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: Keys.self)
         let dict = try container.decode([String: [Simulator]].self, forKey: .devices)
-        self.devices = dict.values.flatMap { $0 }
+        devices = dict.values.flatMap { $0 }
     }
 }

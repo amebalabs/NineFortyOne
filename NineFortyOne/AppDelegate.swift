@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_: Notification) {
         menuBarItem = MenubarItem(simctl)
         simctl.continiousOverride(interval: preferences.overrideInterval)
-        
+
         KeyboardShortcuts.onKeyUp(for: .toggle) { [self] in
             simctl.toggle()
             menuBarItem?.setMenuBarImage()

@@ -32,18 +32,18 @@ public class Preferences: ObservableObject {
             var offImage: NSImage
             let imageConfig = NSImage.SymbolConfiguration(pointSize: 50, weight: .heavy, scale: .large)
             switch self {
-                case .Option1:
-                    onImage = NSImage(systemSymbolName: "iphone", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
-                    offImage = NSImage(systemSymbolName: "iphone.slash", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
-                case .Option2:
-                    onImage = NSImage(systemSymbolName: "lock", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
-                    offImage = NSImage(systemSymbolName: "lock.slash", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
-                case .Option3:
-                    onImage = NSImage(systemSymbolName: "plus.circle", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
-                    offImage = NSImage(systemSymbolName: "multiply.circle", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
-                case .Option4:
-                    onImage = NSImage(systemSymbolName: "bolt", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
-                    offImage = NSImage(systemSymbolName: "bolt.slash", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+            case .Option1:
+                onImage = NSImage(systemSymbolName: "iphone", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+                offImage = NSImage(systemSymbolName: "iphone.slash", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+            case .Option2:
+                onImage = NSImage(systemSymbolName: "lock", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+                offImage = NSImage(systemSymbolName: "lock.slash", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+            case .Option3:
+                onImage = NSImage(systemSymbolName: "plus.circle", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+                offImage = NSImage(systemSymbolName: "multiply.circle", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+            case .Option4:
+                onImage = NSImage(systemSymbolName: "bolt", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
+                offImage = NSImage(systemSymbolName: "bolt.slash", accessibilityDescription: nil)!.withSymbolConfiguration(imageConfig)!
             }
             onImage.isTemplate = true
             offImage.isTemplate = true
@@ -68,7 +68,7 @@ public class Preferences: ObservableObject {
             Preferences.setValue(value: menuBarIcon.rawValue, key: .MenuBarIcon)
         }
     }
-    
+
     @Published public var overrideInterval: TimeInterval {
         didSet {
             Preferences.setValue(value: overrideInterval, key: .OverrideInterval)

@@ -1,6 +1,6 @@
 import Foundation
-import LaunchAtLogin
 import KeyboardShortcuts
+import LaunchAtLogin
 import SwiftUI
 
 struct PreferencesView: View {
@@ -53,7 +53,7 @@ struct GeneralSettingsView: View {
                 Text("Turn On\\Off:")
                 Spacer()
                 KeyboardShortcuts.Recorder(for: .toggle)
-            }.frame(width:250)
+            }.frame(width: 250)
         }
         .padding(20)
         .frame(width: 410, height: preferences.showMenuBarIcon ? 140 : 80)
